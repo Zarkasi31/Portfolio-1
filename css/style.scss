@@ -112,6 +112,95 @@ body{
     align-items: center;
     z-index: 5;
     margin-top: 150px;
+
+    .title{
+        font-size: 20px;
+        color: var(--color-text);
+        margin-bottom: 30px;
+    }
+
+    .underline{
+        background-color: #B5B1AD;
+        margin: 65px 0 20px 0;
+        width: 433px;
+        height: 2px;
+        border: 1px solid var(--color-border);
+        border-radius: 50px;
+    }
+
+    .card-small{
+        width: 433px;
+        height: 70px;
+        border: 1px solid var(--color-border);
+        border-radius: 50px;
+        background-color: var(--color-button);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card-big-1{
+        width: 433px;
+        height: 140px;
+        border: 1px solid var(--color-border);
+        border-radius: 20px;
+        background-color: var(--color-button);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .card-medium{
+        width: 433px;
+        height: 433px;
+        border: 1px solid var(--color-border);
+        border-radius: 20px;
+        background-color: var(--color-button);
+    }
+
+    .icon{
+        width: 30px;
+        height: 30px;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+    }
+
+    .icon-small{
+        width: 40px;
+        height: 40px;
+        background-color: #D9D9D9;
+        border-radius: 50%;
+    }
+
+    .tnggl-small{
+        color: #B5B1AD;
+        font-size: 12px;
+        font-weight: 200;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    .heading-small{
+        color: var(--color-text);
+        font-size: 14px;
+        font-weight:500;
+        line-height: 1.5;
+    }
+
+    .sub-heading-small{
+        color: var(--color-text);
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
     .bio{
         height: 100vh;
         // background-color: red;
@@ -175,6 +264,139 @@ body{
             }
         }
     }
+
+    .experience{
+        // background-color: red;
+       
+        ul{
+           
+            li{
+                
+
+                .card-small{
+                    .icon{
+                        
+                    }
+
+                    .company{
+                        margin: 10px;
+                        .name{
+                            
+                        }
+
+                        .posisi{
+                           
+                        }
+                    }
+
+                    .tnggl{
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .award{
+        // background-color: red;
+
+    }
+
+    .do{
+        .card-do{
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .icon{
+                // flex: 1;
+            }
+
+            .description{
+                // flex: 3;
+                // background-color: red;
+                height: 100%;
+            }
+        }
+
+       
+    }
+
+    
    }
+
+   .bothline{
+    margin: 65px auto;
+    width: 90%;
+    background-color: var(--color-text);
+    color: var(--color-button);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: "bio bio nav kosong"
+                         "btn btn btn";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr ;
+    
+    .b-bio{
+        grid-area: "bio";
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img{
+            width: 99px;
+            height: 99px;
+            border-radius: 50%;
+            flex: 1;
+        }
+
+        .text{
+            flex: 3;
+        }
+
+        .name{
+            font-size: 31px;
+            
+        }
+
+        .desc{
+            font-size: 16px;
+            width: 80%;
+        }
+    }
+
+    .nav{
+        grid-area: "nav";
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                list-style: none;
+                padding: 20px;
+            }
+        }
+        
+    }
+
+    .btn-bot{
+        grid-area: "btn";
+        justify-self: center;
+
+        button{
+            background-color: var(--color-button);
+            margin:20px 0 20px 50%;
+            align-self: flex-start;
+            z-index: 1;
+            width: 155px;
+            height: 44px;
+            border-radius: 20px;
+            border: 2px solid var(--color-border);
+        }
+    }
+}
 
 }

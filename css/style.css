@@ -69,6 +69,82 @@ body {
     z-index: 5;
     margin-top: 150px;
   }
+  main .title {
+    font-size: 20px;
+    color: var(--color-text);
+    margin-bottom: 30px;
+  }
+  main .underline {
+    background-color: #B5B1AD;
+    margin: 65px 0 20px 0;
+    width: 433px;
+    height: 2px;
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+  }
+  main .card-small {
+    width: 433px;
+    height: 70px;
+    border: 1px solid var(--color-border);
+    border-radius: 50px;
+    background-color: var(--color-button);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .card-big-1 {
+    width: 433px;
+    height: 140px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    background-color: var(--color-button);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .card-medium {
+    width: 433px;
+    height: 433px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    background-color: var(--color-button);
+  }
+  main .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+  }
+  main .icon-small {
+    width: 40px;
+    height: 40px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+  }
+  main .tnggl-small {
+    color: #B5B1AD;
+    font-size: 12px;
+    font-weight: 200;
+  }
+  main ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  main li {
+    list-style: none;
+  }
+  main .heading-small {
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+  main .sub-heading-small {
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 600;
+  }
   main .bio {
     height: 100vh;
     display: flex;
@@ -115,5 +191,78 @@ body {
   main .bio .see:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+  main .experience ul li .card-small .company {
+    margin: 10px;
+  }
+  main .do .card-do {
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  main .do .card-do .description {
+    height: 100%;
+  }
+  .bothline {
+    margin: 65px auto;
+    width: 90%;
+    background-color: var(--color-text);
+    color: var(--color-button);
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas: "bio bio nav kosong" "btn btn btn";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr;
+  }
+  .bothline .b-bio {
+    grid-area: "bio";
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .bothline .b-bio img {
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    flex: 1;
+  }
+  .bothline .b-bio .text {
+    flex: 3;
+  }
+  .bothline .b-bio .name {
+    font-size: 31px;
+  }
+  .bothline .b-bio .desc {
+    font-size: 16px;
+    width: 80%;
+  }
+  .bothline .nav {
+    grid-area: "nav";
+  }
+  .bothline .nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .bothline .nav ul li {
+    list-style: none;
+    padding: 20px;
+  }
+  .bothline .btn-bot {
+    grid-area: "btn";
+    justify-self: center;
+  }
+  .bothline .btn-bot button {
+    background-color: var(--color-button);
+    margin: 20px 0 20px 50%;
+    align-self: flex-start;
+    z-index: 1;
+    width: 155px;
+    height: 44px;
+    border-radius: 20px;
+    border: 2px solid var(--color-border);
   }
 }/*# sourceMappingURL=style.css.map */
